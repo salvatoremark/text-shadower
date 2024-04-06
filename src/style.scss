@@ -4,12 +4,13 @@
  */
 
 .wp-block-smark-text-shadower {
+  white-space: nowrap;
+  max-width: none;
+
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic,
     "AppleGothic", sans-serif;
   text-rendering: optimizeLegibility;
-  max-width: none;
   min-height: 10vh;
-  white-space: nowrap;
 
   &.elegantshadow {
     letter-spacing: 0.15em;

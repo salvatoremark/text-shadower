@@ -6,10 +6,10 @@
   "title": "Text Shadower",
   "category": "text",
   "icon": "cloud",
-  "description": "Text Shadower: A WordPress block that renders the effect of text casted in shadow.",
+  "description": "Applies a shadow effect to text.",
   "supports": {
-    "align": true,
     "html": false,
+    "align": true,
     "color": {
       "background": true,
       "text": true
@@ -37,7 +37,7 @@
       "type": "string",
       "default": "Shadow DOM",
       "source": "text",
-      "selector": "div"
+      "selector": "div div"
     },
     "textalign": {
       "type": "string",
@@ -49,11 +49,11 @@
     },
     "boxwidth": {
       "type": "number",
-      "default": 43
+      "default": 53
     },
     "fontsize": {
       "type": "number",
-      "default": 6
+      "default": 7
     }
   },
   "styles": [
@@ -72,9 +72,6 @@
       "textinput": "Shadow DOM",
       "styleclass": "retroshadow",
       "fontsize": 12
-    },
-    "style": {
-      "padding": "1em"
     }
   },
   "textdomain": "smark",

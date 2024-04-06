@@ -13,16 +13,12 @@ import {
   TextControl,
   SelectControl,
   RangeControl,
-  ToolbarGroup,
-  ToolbarButton,
-  ToolbarDropdownMenu,
 } from "@wordpress/components";
 
 /**
  * Internal dependencies
  */
 import metadata from "./block.json";
-import "./editor.scss";
 
 function Edit(props) {
   const { attributes, setAttributes } = props;
@@ -39,6 +35,7 @@ function Edit(props) {
   return (
     <>
       <div {...blockProps}>{__(attributes.textinput, metadata.textdomain)}</div>
+
       <BlockControls>
         <AlignmentToolbar
           value={attributes.textalign}

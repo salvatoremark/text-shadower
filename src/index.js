@@ -34,8 +34,7 @@ wp.domReady(() => {
       .getBlocks()
       .filter((block) => {
         return (
-          block.name == "smark/text-shadower" &&
-          !block.attributes.textinput.length
+          block.name == metadata.name && !block.attributes.textinput.length
         );
       });
 

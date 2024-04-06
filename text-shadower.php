@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Text Shadower
- * Description:       A fun alternative to adding shadowed text to your website.
+ * Description:       Applies a shadow effect to text.
  * Requires at least: 6.1
  * Requires PHP:      7.0
  * Version:           0.1.0

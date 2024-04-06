@@ -1,7 +1,7 @@
 {
   "name": "text-shadower",
   "version": "0.1.0",
-  "description": "Text Shadower: A WordPress block that renders the effect of text casting a shadow",
+  "description": "Applies a shadow effect to text.",
   "author": "Mark Salvatore",
   "license": "GPL-2.0-or-later",
   "main": "build/index.js",
