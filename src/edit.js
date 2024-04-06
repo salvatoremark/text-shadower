@@ -27,7 +27,7 @@ import "./editor.scss";
 function Edit(props) {
   const { attributes, setAttributes } = props;
   const inlineStyles = {
-    maxWidth: attributes.boxwidth + "px",
+    maxWidth: attributes.boxwidth + "vw",
     fontSize: attributes.fontsize + "vw",
     textAlign: attributes.textalign,
   };
@@ -73,18 +73,18 @@ function Edit(props) {
             __nextHasNoMarginBottom
           />
           <RangeControl
-            label='Box Width'
-            value={attributes.boxwidth}
-            onChange={(boxwidth) => setAttributes({ boxwidth })}
-            min={300}
-            max={1500}
-          />
-          <RangeControl
             label='Font Size'
             value={attributes.fontsize}
             onChange={(fontsize) => setAttributes({ fontsize })}
-            min={1}
+            min={3}
             max={15}
+          />
+          <RangeControl
+            label='Box Width'
+            value={attributes.boxwidth}
+            onChange={(boxwidth) => setAttributes({ boxwidth })}
+            min={3}
+            max={100}
           />
         </PanelBody>
       </InspectorControls>

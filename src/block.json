@@ -31,7 +31,7 @@
     },
     "align": {
       "type": "string",
-      "default": "full"
+      "default": "none"
     },
     "textinput": {
       "type": "string",
@@ -49,11 +49,11 @@
     },
     "boxwidth": {
       "type": "number",
-      "default": 1500
+      "default": 43
     },
     "fontsize": {
       "type": "number",
-      "default": 9
+      "default": 6
     }
   },
   "styles": [
