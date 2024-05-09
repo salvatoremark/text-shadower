@@ -3,19 +3,18 @@
  */
 import { useBlockProps } from "@wordpress/block-editor";
 
-function Save(props) {
-  const { attributes } = props;
-  const inlineStyles = {
-    maxWidth: attributes.boxwidth + "vw",
-    fontSize: attributes.fontsize + "vw",
-    textAlign: attributes.textalign,
-  };
+export default function Save({ attributes }) {
+	const { boxwidth, fontsize, textalign, textinput, styleclass } = attributes;
+	const inlineStyles = {
+		maxWidth: boxwidth + "vw",
+		fontSize: fontsize + "vw",
+		textAlign: textalign,
+	};
 
-  const blockProps = useBlockProps.save({
-    className: attributes.styleclass,
-    style: inlineStyles,
-  });
+	const blockProps = useBlockProps.save({
+		className: styleclass,
+		style: inlineStyles,
+	});
 
-  return <div {...blockProps}>{attributes.textinput}</div>;
+	return <div {...blockProps}>{textinput}</div>;
 }
-export default Save;

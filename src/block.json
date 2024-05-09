@@ -1,7 +1,7 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "smark/text-shadower",
+  "name": "msalv/text-shadower",
   "version": "0.1.0",
   "title": "Text Shadower",
   "category": "text",
@@ -74,7 +74,7 @@
       "fontsize": 12
     }
   },
-  "textdomain": "smark",
+  "textdomain": "text-shadower",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css"
