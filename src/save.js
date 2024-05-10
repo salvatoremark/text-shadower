@@ -4,11 +4,11 @@
 import { useBlockProps } from "@wordpress/block-editor";
 
 export default function Save({ attributes }) {
-	const { boxwidth, fontsize, textalign, textinput, styleclass } = attributes;
+	const { boxWidth, fontSize, textAlign, textInput, styleclass } = attributes;
 	const inlineStyles = {
-		maxWidth: boxwidth + "vw",
-		fontSize: fontsize + "vw",
-		textAlign: textalign,
+		maxWidth: boxWidth + "vw",
+		fontSize: fontSize + "vw",
+		textAlign: textAlign,
 	};
 
 	const blockProps = useBlockProps.save({
@@ -16,5 +16,5 @@ export default function Save({ attributes }) {
 		style: inlineStyles,
 	});
 
-	return <div {...blockProps}>{textinput}</div>;
+	return <div {...blockProps}>{textInput}</div>;
 }

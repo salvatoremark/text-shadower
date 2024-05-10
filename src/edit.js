@@ -21,11 +21,11 @@ import {
 import metadata from "./block.json";
 
 export default function Edit({ attributes, setAttributes }) {
-	const { boxwidth, fontsize, textalign, textinput, styleclass } = attributes;
+	const { boxWidth, fontSize, textAlign, textInput, styleclass } = attributes;
 	const inlineStyles = {
-		maxWidth: boxwidth + "vw",
-		fontSize: fontsize + "vw",
-		textAlign: textalign,
+		maxWidth: boxWidth + "vw",
+		fontSize: fontSize + "vw",
+		textAlign: textAlign,
 	};
 	const blockProps = useBlockProps({
 		className: styleclass,
@@ -34,24 +34,22 @@ export default function Edit({ attributes, setAttributes }) {
 
 	return (
 		<>
-			<div {...blockProps}>{__(textinput, metadata.textdomain)}</div>
-
 			<BlockControls>
 				<AlignmentToolbar
-					value={textalign}
-					onChange={(textalign) => setAttributes({ textalign })}
+					value={textAlign}
+					onChange={(textAlign) => setAttributes({ textAlign })}
 				/>
 			</BlockControls>
 
 			<InspectorControls>
 				<PanelBody
-					title={__("CONTROLS", metadata.texdomain)}
+					title={__("Settings", metadata.texdomain)}
 					initialOpen={true}
 				>
 					<TextControl
 						label={__("Text")}
-						value={textinput}
-						onChange={(textinput) => setAttributes({ textinput })}
+						value={textInput}
+						onChange={(textInput) => setAttributes({ textInput })}
 					/>
 					<SelectControl
 						label={__("Style", metadata.texdomain)}
@@ -72,20 +70,22 @@ export default function Edit({ attributes, setAttributes }) {
 					/>
 					<RangeControl
 						label="Font Size"
-						value={fontsize}
-						onChange={(fontsize) => setAttributes({ fontsize })}
+						value={fontSize}
+						onChange={(fontSize) => setAttributes({ fontSize })}
 						min={3}
 						max={15}
 					/>
 					<RangeControl
 						label="Box Width"
-						value={boxwidth}
-						onChange={(boxwidth) => setAttributes({ boxwidth })}
+						value={boxWidth}
+						onChange={(boxWidth) => setAttributes({ boxWidth })}
 						min={3}
 						max={100}
 					/>
 				</PanelBody>
 			</InspectorControls>
+
+			<div {...blockProps}>{__(textInput, metadata.textdomain)}</div>
 		</>
 	);
 }

@@ -33,13 +33,13 @@
       "type": "string",
       "default": "none"
     },
-    "textinput": {
+    "textInput": {
       "type": "string",
       "default": "Shadow DOM",
       "source": "text",
       "selector": "div div"
     },
-    "textalign": {
+    "textAlign": {
       "type": "string",
       "default": "center"
     },
@@ -47,11 +47,11 @@
       "type": "string",
       "default": "elegantshadow"
     },
-    "boxwidth": {
+    "boxWidth": {
       "type": "number",
       "default": 53
     },
-    "fontsize": {
+    "fontSize": {
       "type": "number",
       "default": 7
     }
@@ -69,9 +69,9 @@
   ],
   "example": {
     "attributes": {
-      "textinput": "Shadow DOM",
+      "textInput": "Shadow DOM",
       "styleclass": "retroshadow",
-      "fontsize": 12
+      "fontSize": 12
     }
   },
   "textdomain": "text-shadower",
